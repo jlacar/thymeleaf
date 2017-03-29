@@ -19,9 +19,6 @@
  */
 package org.thymeleaf.util;
 
-
-
-
 /**
  * 
  * @author Daniel Fern&aacute;ndez
@@ -31,19 +28,14 @@ package org.thymeleaf.util;
  */
 public enum NumberPointType {
 
-
     POINT("POINT"),
     COMMA("COMMA"),
     WHITESPACE("WHITESPACE"),
     NONE("NONE"),
     DEFAULT("DEFAULT");
-    
-
-    
+        
     private final String name;
 
-    
-    
     public static NumberPointType match(final String name) {
         if ("NONE".equals(name)) {
             return NONE;
@@ -62,9 +54,6 @@ public enum NumberPointType {
         }
         return null;
     }
-
-    
-    
     
     private NumberPointType(final String name) {
         this.name = name;
